@@ -1,0 +1,245 @@
+semver: 2.7.1
+header: 
+   name: "WING"
+   bitmap: "outlaw.jpg"
+telemetryProtocol: 0
+thrTrim: 0
+noGlobalFunctions: 0
+displayTrims: 0
+ignoreSensorIds: 0
+trimInc: 0
+disableThrottleWarning: 0
+displayChecklist: 0
+extendedLimits: 0
+extendedTrims: 0
+throttleReversed: 0
+enableCustomThrottleWarning: 0
+customThrottleWarningPosition: 0
+beepANACenter: 0
+mixData: 
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "AilR"
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "AilL"
+ -
+   weight: 100
+   destCh: 2
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Motor"
+ -
+   weight: 100
+   destCh: 3
+   srcRaw: I1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Elev"
+expoData: 
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ail
+   carryTrim: 0
+   chn: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+   curve: 
+      type: 1
+      value: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ele
+   carryTrim: 0
+   chn: 1
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+   curve: 
+      type: 1
+      value: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 2
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+   curve: 
+      type: 1
+      value: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 3
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+   curve: 
+      type: 1
+      value: 0
+customFn: 
+   0:
+      swtch: "SF2"
+      func: OVERRIDE_CHANNEL
+      def: "2,-100,1"
+thrTraceSrc: Thr
+switchWarningState: AuBuCuDuEuFuGuHu
+rssiSource: none
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+jitterFilter: GLOBAL
+moduleData: 
+   0:
+      type: TYPE_MULTIMODULE
+      subType: 3,0
+      channelsStart: 0
+      channelsCount: 16
+      failsafeMode: NOT_SET
+      mod: 
+         multi: 
+            disableTelemetry: 0
+            disableMapping: 0
+            autoBindMode: 0
+            lowPowerMode: 0
+            receiverTelemetryOff: 0
+            receiverHigherChannels: 0
+            optionValue: 0
+inputNames: 
+   0:
+      val: "Ail"
+   1:
+      val: "Ele"
+   2:
+      val: "Thr"
+   3:
+      val: "Rud"
+potsWarnEnabled: 0
+screenData: 
+   0:
+      LayoutId: "Layout1x2"
+      layoutData: 
+         zones: 
+            0:
+               widgetName: "Text"
+               widgetData: 
+                  options: 
+                     0:
+                        type: String
+                        value: 
+                           stringValue: "WING"
+                     1:
+                        type: Color
+                        value: 
+                           color: 0x105C98
+                     2:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 6
+                     3:
+                        type: Bool
+                        value: 
+                           boolValue: 1
+            1:
+               widgetName: "Outputs"
+               widgetData: 
+                  options: 
+                     0:
+                        type: Signed
+                        value: 
+                           signedValue: 1
+                     1:
+                        type: Bool
+                        value: 
+                           boolValue: 0
+                     2:
+                        type: Color
+                        value: 
+                           color: 0x000000
+                     3:
+                        type: Color
+                        value: 
+                           color: 0x000000
+                     4:
+                        type: Color
+                        value: 
+                           color: 0x105C98
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 1
+            1:
+               type: Bool
+               value: 
+                  boolValue: 0
+            2:
+               type: Bool
+               value: 
+                  boolValue: 0
+            3:
+               type: Bool
+               value: 
+                  boolValue: 1
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
+view: 0
+modelRegistrationID: "525412G-"
