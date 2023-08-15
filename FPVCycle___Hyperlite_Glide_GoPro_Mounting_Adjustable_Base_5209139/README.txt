@@ -1,1 +1,0 @@
-FPVCycle / Hyperlite Glide GoPro Mounting Adjustable Base by martinmichaelfuchs on Thingiverse: https://www.thingiverse.com/thing:5209139
